@@ -486,8 +486,12 @@
     items:
       - id: N14ClothingOuterLegionnaireMeleeArmor
       - id: N14TribalMachete
+      - id: N14TrenchClub
+      - id: N14Stimpak
+        amount: 3
       - id: N14LegionnaireShield
-      - id: N14HealingPowder
+        amount: 2
+      - id: N14HealingPoultice
       - id: N14StimpakDirty
       - id: N14FoodTinK
         amount: 2
@@ -511,7 +515,11 @@
     items:
       - id: N14ClothingOuterLegionnaireRecruitArmor
       - id: ClothingBeltQuiverSpear
-      - id: N14PilumSpear
+      - id: N14WeaponSMG9mm
+      - id: MagazineBox9mm
+      - id: N14MagazineSMG9mm
+        amount: 4
+      - id: ClothingBeltMilitary
       - id: N14TribalMachete
       - id: N14LegionnaireBuckler
       - id: N14HealingPowder
@@ -537,6 +545,9 @@
     items:
       - id: N14ClothingOuterLegionnaireBulletArmor
       - id: ClothingBeltQuiverSpear
+      - id: N14WastelandPolearm
+      - id: N14Stimpak
+        amount: 2
       - id: N14PilumSpear
         amount: 4
       - id: N14HealingPowder
@@ -561,7 +572,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterLegionnaireMeleeArmor
-      - id: N14TribalMachete
+      - id: N14LongSword
+      - id: N14WeaponShotgunSawedOff
+      - id: MagazineBox12gauge
       - id: N14LegionnaireBuckler
       - id: N14HealingPowder
         amount: 2
@@ -586,7 +599,6 @@
   - type: SpawnItemsOnUse
     items:
       - id: N14ClothingOuterLegionnaireRecruitArmor
-      - id: N14TribalMachete
       - id: N14HealingPowder
         amount: 4
       - id: N14HealingPoultice
@@ -596,6 +608,16 @@
       - id: N14FoodTinK
         amount: 2
       - id: DrinkWaterBottleFull
+      - id: ClothingBeltMedical
+      - id: N14Stimpak
+        amount: 3
+      - id: N14FloraWildBrocFlowerClippingSeed
+      - id: N14FloraWildXanderRootClippingSeed
+      - id: N14MortarpestleGrinder
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: MagazineBox45
       - id: FoodCondimentPacketMustard
     sound:
       path: /Audio/Effects/unwrap.ogg
