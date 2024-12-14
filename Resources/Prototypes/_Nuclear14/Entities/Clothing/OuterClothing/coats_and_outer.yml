@@ -1,6 +1,32 @@
 #MARK: Plain Coats and Clothing
 - type: entity
   parent: ClothingOuterStorageBase
+  id: N14ClothingOuterGhostEchoes
+  name: Ghost Echoes
+  description: A coat filled with bullets holes... Seems like his previous owner wasn't so lucky
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/falloutghostechoes.rsi
+  - type: Clothing
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/falloutghostechoes.rsi
+  - type: ClothingSpecialModifier
+    luckModifier: 1
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: N14ClothingOuterHarperCoat
+  name: Harper Coat
+  description: A dark coat with some red lining.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/falloutharpercoat.rsi
+  - type: Clothing
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/falloutharpercoat.rsi
+  - type: ClothingSpecialModifier
+    charismaModifier: 1
+
+- type: entity
+  parent: ClothingOuterStorageBase
   id: N14ClothingOuterJacketLettermanRed
   name: letterman jacket
   description: A red letterman jacket.
@@ -679,3 +705,22 @@
         Slash: 0.6
         Piercing: 0.65
         Heat: 0.65
+
+#MARK: Vancouver preventor
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: N14ClothingOuterPreventorJacket
+  name: preventor paded jacket
+  description: A winter leather jacket with internal armor layers, the regular piece of armor used by the vancouver law enforcers and preventors.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/armoredjacket.rsi
+  - type: Clothing
+    sprite: _Nuclear14/Clothing/OuterClothing/Coats/armoredjacket.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6

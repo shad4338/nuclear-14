@@ -5,6 +5,10 @@
   description: job-description-ncr-ranger
   playTimeTracker: NCRRanger
   requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
     - !type:CharacterDepartmentTimeRequirement
       department: NCR
       min: 7200 # 20 hours as NCR
@@ -12,11 +16,13 @@
   startingGear: NCRRangerGear
   supervisors: ent-job-supervisors-ncr # Corvax-Nuclear
   icon: JobIconSecurityOfficer
+  supervisors: job-supervisors-ncr-ranger
   requireAdminNotify: true
   canBeAntag: false
   access:
   - NCR
   - NCRSGT
+  - NCRMedic
   - NCRRanger
   special:
   - !type:AddComponentSpecial
