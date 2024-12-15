@@ -49,5 +49,5 @@ ent-N14WeaponTurretRaider = { ent-BaseWeaponTurret }
     .suffix = Рейдеры, Враждебная
     .desc = { ent-BaseWeaponTurret.desc }
 ent-N14WeaponTurretRobot = { ent-BaseWeaponTurret }
-    .suffix = Работы, Враждебная
+    .suffix = Роботы, Враждебная
     .desc = { ent-BaseWeaponTurret.desc }
