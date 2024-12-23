@@ -5,8 +5,12 @@
   description: job-description-ncr-ranger-veteran
   playTimeTracker: NCRRangerVeteran
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: NCR
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRRanger
       min: 216000 # 60 hours as NCR
     - !type:CharacterWhitelistRequirement
   startingGear: NCRRangerVeteranGear
@@ -14,8 +18,11 @@
   supervisors: ent-job-supervisors-ncr # Corvax-Nuclear
   requireAdminNotify: true
   canBeAntag: false
-  accessGroups:
+  access:
   - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRRanger
   special:
   - !type:AddComponentSpecial
     components:
