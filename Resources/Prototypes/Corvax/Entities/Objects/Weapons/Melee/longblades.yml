@@ -21,7 +21,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 24
+        Slash: 23
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item
@@ -98,7 +98,7 @@
       collection: MetalThud
     activatedDamage:
         types:
-            Heat: 28
+            Heat: 27
   - type: SolutionContainerManager
     solutions:
       Welder:

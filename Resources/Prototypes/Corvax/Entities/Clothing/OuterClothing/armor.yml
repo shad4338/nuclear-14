@@ -34,12 +34,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.3
-        Heat: 0.3
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.5
+        Heat: 0.5
   - type: ClothingSpecialModifier
-    strengthModifier: 8
+    strengthModifier: 4
 
 - type: entity
   parent: ClothingOuterBase
@@ -54,12 +54,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.56
+        Heat: 0.6
   - type: ClothingSpecialModifier
-    strengthModifier: 4
+    strengthModifier: 2
 
 - type: entity
   parent: ClothingOuterBase
@@ -71,16 +71,13 @@
     sprite: Corvax/Clothing/OuterClothing/Armor/heavyarmor.rsi
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/heavyarmor.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.95
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.5
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.64
+        Heat: 0.64
   - type: ClothingSpecialModifier
     strengthModifier: 2
 
@@ -97,10 +94,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.55
-        Slash: 0.55
-        Piercing: 0.55
-        Heat: 0.5
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.7
 
 - type: entity
   parent: ClothingOuterBase
@@ -154,13 +151,16 @@
     sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.05
+    sprintModifier: 0.05
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.55
-        Slash: 0.55
-        Piercing: 0.6
-        Heat: 0.6
+        Blunt: 0.77
+        Slash: 0.77
+        Piercing: 0.75
+        Heat: 0.75
 
 - type: entity
   parent: ClothingOuterBase
@@ -173,15 +173,15 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.15
-    sprintModifier: 1.15
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.5
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.8
 
 - type: entity
   parent: ClothingOuterBase
@@ -238,10 +238,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.65
-        Piercing: 0.7
-        Heat: 0.5
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.8
 
 - type: entity
   parent: ClothingOuterBase
@@ -254,12 +254,12 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/lightarmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.2
-    sprintModifier: 1.2
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.75
-        Slash: 0.75
-        Piercing: 0.8
-        Heat: 0.75
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
