@@ -1,8 +1,8 @@
 - type: gameMap
   id: Sunnyvale
   mapName: 'Саннивейл'
-  mapPath: /Maps/N14/SunnyvaleSurface.yml
-#  mapPath: /Maps/Corvax/CorvaxSunnyvaleSurface.yml # Corvax-Maps
+ # mapPath: /Maps/N14/SunnyvaleSurface.yml
+  mapPath: /Maps/N14/SunnyvaleSurfaceCorvax.yml # Corvax-Maps
   minPlayers: 0
   stations:
     Sunnyvale:
@@ -13,7 +13,6 @@
         - type: CP14StationAdditionalMap
           mapPaths:
           - /Maps/N14/SunnyvaleUnderground.yml
-          #- /Maps/Corvax/CorvaxSunnyvaleUnderground.yml Removed for refactoring
         - type: StationJobs
           overflowJobs:
             - Wastelander
