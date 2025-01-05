@@ -152,13 +152,13 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.05
-    sprintModifier: 0.05
+    walkModifier: 1.05
+    sprintModifier: 1.05
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.77
-        Slash: 0.77
+        Blunt: 0.75
+        Slash: 0.75
         Piercing: 0.75
         Heat: 0.75
 
@@ -173,8 +173,8 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1.05
-    sprintModifier: 1.05
+    walkModifier: 1.1
+    sprintModifier: 1.1
   - type: Armor
     modifiers:
       coefficients:
