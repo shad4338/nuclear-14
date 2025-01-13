@@ -347,7 +347,7 @@
     items:
       - id: N14ClothingOuterLegionnaireVeteranArmor
       - id: N14Gladius
-      - id: N14TribalBigClub
+      - id: N14FireAxe
       - id: ThrowingKnife
         amount: 3
       - id: N14Stimpak
@@ -430,10 +430,6 @@
       - id: N14WeaponRevolver44Tribal
       - id: SpeedLoader44
       - id: MagazineBox44
-      - id: ShockCollar
-        amount: 2
-      - id: N14Multitool
-      - id: RemoteSignaller
       - id: Stunprod
       - id: Zipties
         amount: 2
@@ -493,7 +489,7 @@
     items:
       - id: N14ClothingOuterLegionnaireBaseArmor
       - id: N14TribalMachete
-      - id: N14WeaponSniper556Tribal
+      - id: N14WeaponSniper556TribalUpgraded
       - id: N14StimpakDirty
         amount: 1
       - id: MagazineBox556

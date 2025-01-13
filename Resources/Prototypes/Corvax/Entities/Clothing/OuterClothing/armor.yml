@@ -39,7 +39,7 @@
         Piercing: 0.5
         Heat: 0.5
   - type: ClothingSpecialModifier
-    strengthModifier: 4
+    strengthModifier: 2
 
 - type: entity
   parent: ClothingOuterBase
@@ -59,7 +59,7 @@
         Piercing: 0.6
         Heat: 0.6
   - type: ClothingSpecialModifier
-    strengthModifier: 2
+    strengthModifier: 1
 
 - type: entity
   parent: ClothingOuterBase
@@ -152,8 +152,8 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.05
-    sprintModifier: 0.05
+    walkModifier: 1.05
+    sprintModifier: 1.05
   - type: Armor
     modifiers:
       coefficients:
