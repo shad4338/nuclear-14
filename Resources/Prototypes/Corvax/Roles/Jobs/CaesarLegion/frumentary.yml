@@ -5,9 +5,12 @@
   description: job-description-caesar-legion-frumentary
   playTimeTracker: CaesarLegionFrumentary
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: CaesarLegion
-      min: 43200 #12 hours
+  - !type:CharacterDepartmentTimeRequirement
+     department: CaesarLegion
+     min: 43200 #12 hours
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
   startingGear: CaesarLegionFrumentaryGear
   alwaysUseSpawner: true
   icon: "JobIconLegioner"
@@ -19,11 +22,6 @@
       - type: NpcFactionMember
         factions:
           - CaesarLegion
-  jobBlockForSpecies:
-  - !type:JobBlockForSpecie
-    nameSpecie: Ghoul
-  - !type:JobBlockForSpecie
-    nameSpecie: GhoulGlowing
 
 - type: startingGear
   id: CaesarLegionFrumentaryGear
