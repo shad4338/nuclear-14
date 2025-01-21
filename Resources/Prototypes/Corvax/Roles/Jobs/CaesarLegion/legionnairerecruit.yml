@@ -4,7 +4,14 @@
   name: job-name-caesar-legion-legionnaire-recruit
   description: job-description-caesar-legionnaire-recruit
   playTimeTracker: CaesarLegionLegionnaireRecruit
-  #requirements:
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
   #  - !type:OverallPlaytimeRequirement
   #    time: 7200 # 2 hour
   startingGear: CaesarLegionLegionnaireRecruitGear
@@ -20,12 +27,7 @@
           - CaesarLegion
       - type: ReplacementAccent
         accent: latin
-  jobBlockForSpecies:
-  - !type:JobBlockForSpecie
-    nameSpecie: Ghoul
-  - !type:JobBlockForSpecie
-    nameSpecie: GhoulGlowing
-
+ 
 - type: startingGear
   id: CaesarLegionLegionnaireRecruitGear
   equipment:
