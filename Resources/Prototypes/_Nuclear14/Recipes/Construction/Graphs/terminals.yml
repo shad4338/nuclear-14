@@ -153,12 +153,12 @@
               prototype: N14MaterialCircuitry1
               amount: 1
             - !type:DeleteEntity {}
-            
+
         - to: Rigged
           steps:
             - tool: Screwing
               doAfter: 0.5
-            - tag: bomb
+            - tag: Bomb # Corvax-Change
               store: bomb
               name: explosive
               icon: Objects/Weapons/Bombs/c4.rsi/icon.png
@@ -167,7 +167,7 @@
               prototype: N14ComputerTerminalRigged
               amount: 1
             - !type:DeleteEntity {}
-            
+
     - node: Rigged
       entity: N14ComputerTerminalRigged
       edges:
