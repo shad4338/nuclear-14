@@ -62,7 +62,7 @@ namespace Content.Client.Construction.UI
                     else
                         _constructionView.OpenCentered();
 
-                    if(_selected != null)
+                    if (_selected != null)
                         PopulateInfo(_selected);
                 }
                 else
@@ -160,11 +160,16 @@ namespace Content.Client.Construction.UI
                 || (recipe.EntityWhitelist != null && !recipe.EntityWhitelist.IsValid(_playerManager.LocalEntity.Value)))
                     continue;
 
+                // Corvax-Change-start
+                var recipeName = recipe.Name.ToLowerInvariant();
+                var localizedRecipeName = Loc.GetString($"recipe-{recipe.ID}-name").ToLowerInvariant();
+
                 if (!string.IsNullOrEmpty(search))
                 {
-                    if (!recipe.Name.ToLowerInvariant().Contains(search.Trim().ToLowerInvariant()))
+                    var searchLower = search.Trim().ToLowerInvariant();
+                    if (!recipeName.Contains(searchLower) && !localizedRecipeName.Contains(searchLower))
                         continue;
-                }
+                } // Corvax-Change-end
 
                 if (!string.IsNullOrEmpty(category) && category != "construction-category-all")
                 {
@@ -218,8 +223,13 @@ namespace Content.Client.Construction.UI
         {
             var spriteSys = _systemManager.GetEntitySystem<SpriteSystem>();
             _constructionView.ClearRecipeInfo();
-            _constructionView.SetRecipeInfo(prototype.Name, prototype.Description, spriteSys.Frame0(prototype.Icon), prototype.Type != ConstructionType.Item);
 
+            // Corvax-Change-start
+            var localizedName = Loc.TryGetString($"recipe-{prototype.ID}-name", out var name) ? name : prototype.Name;
+            var localizedDescription = Loc.TryGetString($"recipe-{prototype.ID}-desc", out var desc) ? desc : prototype.Description;
+
+            _constructionView.SetRecipeInfo(localizedName, localizedDescription, spriteSys.Frame0(prototype.Icon), prototype.Type != ConstructionType.Item);
+            // Corvax-Change-end
             var stepList = _constructionView.RecipeStepList;
             GenerateStepList(prototype, stepList);
         }
@@ -236,7 +246,7 @@ namespace Content.Client.Construction.UI
                 var text = entry.Arguments != null
                     ? Loc.GetString(entry.Localization, entry.Arguments) : Loc.GetString(entry.Localization);
 
-                if (entry.EntryNumber is {} number)
+                if (entry.EntryNumber is { } number)
                 {
                     text = Loc.GetString("construction-presenter-step-wrapper",
                         ("step-number", number), ("text", text));
@@ -252,10 +262,12 @@ namespace Content.Client.Construction.UI
 
         private static ItemList.Item GetItem(ConstructionPrototype recipe, ItemList itemList)
         {
+            var localizedName = Loc.TryGetString($"recipe-{recipe.ID}-name", out var name) ? name : recipe.Name; // Corvax-Change
+
             return new(itemList)
             {
                 Metadata = recipe,
-                Text = recipe.Name,
+                Text = localizedName, // Corvax-Change
                 Icon = recipe.Icon.Frame0(),
                 TooltipEnabled = true,
                 TooltipText = recipe.Description
