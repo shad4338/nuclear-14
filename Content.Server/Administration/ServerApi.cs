@@ -6,18 +6,23 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
+using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
+using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
 using Content.Server.Maps;
 using Content.Server.RoundEnd;
+using Content.Shared.Administration;
 using Content.Shared.Administration.Managers;
 using Content.Shared.CCVar;
+using Content.Shared.Database;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Prototypes;
 using Robust.Server.ServerStatus;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Configuration;
+using Robust.Shared.Console;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -404,7 +409,7 @@ public sealed partial class ServerApi : IPostInjectInit
         {
             if (_playerManager.TryGetSessionById(playerUserId, out var session))
             {
-                bwoinkSystem.DiscordAhelpSendMessage(message, new EntitySessionEventArgs(session));
+                //bwoinkSystem.DiscordAhelpSendMessage(message, new EntitySessionEventArgs(session)); // закоменчено до переработки дс ахелпов by Sh1ntra
                 await RespondOk(context);
             }
         });
