@@ -2,20 +2,21 @@ using Content.Client._NC.DiscordAuth;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
+using Content.Client.JoinQueue;
+using Content.Client.DebugMon;
 using Content.Client.Eui;
 using Content.Client.Flash;
 using Content.Client.Fullscreen;
 using Content.Client.GhostKick;
 using Content.Client.Guidebook;
-using Content.Client.JoinQueue;
 using Content.Client.Info;
 using Content.Client.Input;
 using Content.Client.IoC;
 using Content.Client.Launcher;
+using Content.Client.Lobby;
 using Content.Client.MainMenu;
 using Content.Client.Parallax.Managers;
 using Content.Client.Players.PlayTimeTracking;
-using Content.Client.Preferences;
 using Content.Client.Radiation.Overlays;
 using Content.Client.Replay;
 using Content.Client.Screenshot;
@@ -55,7 +56,6 @@ namespace Content.Client.Entry
         [Dependency] private readonly IScreenshotHook _screenshotHook = default!;
         [Dependency] private readonly FullscreenHook _fullscreenHook = default!;
         [Dependency] private readonly ChangelogManager _changelogManager = default!;
-        [Dependency] private readonly RulesManager _rulesManager = default!;
         [Dependency] private readonly ViewportManager _viewportManager = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
         [Dependency] private readonly IInputManager _inputManager = default!;
@@ -73,6 +73,9 @@ namespace Content.Client.Entry
         [Dependency] private readonly IResourceManager _resourceManager = default!;
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly JoinQueueManager _joinQueue = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuth = default!;
+        [Dependency] private readonly ContentReplayPlaybackManager _replayMan = default!;
+        [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         //[Dependency] private readonly ContentReplayPlaybackManager _replayMan = default!;
         [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
@@ -107,7 +110,6 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("objective");
             _prototypeManager.RegisterIgnore("holiday");
             _prototypeManager.RegisterIgnore("htnCompound");
-            _prototypeManager.RegisterIgnore("aiFaction");
             _prototypeManager.RegisterIgnore("htnPrimitive");
             _prototypeManager.RegisterIgnore("gameMap");
             _prototypeManager.RegisterIgnore("gameMapPool");
@@ -115,9 +117,9 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("npcFaction");
             _prototypeManager.RegisterIgnore("gamePreset");
             _prototypeManager.RegisterIgnore("noiseChannel");
+            _prototypeManager.RegisterIgnore("playerConnectionWhitelist");
             _prototypeManager.RegisterIgnore("spaceBiome");
             _prototypeManager.RegisterIgnore("worldgenConfig");
-            _prototypeManager.RegisterIgnore("gcQueue");
             _prototypeManager.RegisterIgnore("gameRule");
             _prototypeManager.RegisterIgnore("worldSpell");
             _prototypeManager.RegisterIgnore("entitySpell");
@@ -126,8 +128,8 @@ namespace Content.Client.Entry
             _prototypeManager.RegisterIgnore("wireLayout");
             _prototypeManager.RegisterIgnore("alertLevels");
             _prototypeManager.RegisterIgnore("nukeopsRole");
-            _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
             _prototypeManager.RegisterIgnore("stationGoal");
+            _prototypeManager.RegisterIgnore("ghostRoleRaffleDecider");
 
             _componentFactory.GenerateNetIds();
             _adminManager.Initialize();
@@ -136,7 +138,6 @@ namespace Content.Client.Entry
             _changelogManager.Initialize();
             _viewportManager.Initialize();
             _ghostKick.Initialize();
-            _rulesManager.Initialize();
             _extendedDisconnectInformation.Initialize();
             _jobRequirements.Initialize();
             _playbackMan.Initialize();
@@ -162,8 +163,8 @@ namespace Content.Client.Entry
             _parallaxManager.LoadDefaultParallax();
 
             _overlayManager.AddOverlay(new SingularityOverlay());
-            _overlayManager.AddOverlay(new RadiationPulseOverlay());
             _overlayManager.AddOverlay(new FlashOverlay());
+            _overlayManager.AddOverlay(new RadiationPulseOverlay());
             _chatManager.Initialize();
             _clientPreferencesManager.Initialize();
             _euiManager.Initialize();
@@ -172,6 +173,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
             _joinQueue.Initialize();
+            _discordAuth.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
             {
@@ -203,7 +205,6 @@ namespace Content.Client.Entry
                     _resourceManager,
                     ReplayConstants.ReplayZipFolder.ToRootedPath());
 
-                //_replayMan.LastLoad = (null, ReplayConstants.ReplayZipFolder.ToRootedPath());
                 _replayLoad.LoadAndStartReplay(reader);
             }
             else if (_gameController.LaunchState.FromLauncher)
@@ -226,7 +227,7 @@ namespace Content.Client.Entry
         {
             if (level == ModUpdateLevel.FramePreEngine)
             {
-                //_debugMonitorManager.FrameUpdate();
+                _debugMonitorManager.FrameUpdate();
             }
         }
     }
