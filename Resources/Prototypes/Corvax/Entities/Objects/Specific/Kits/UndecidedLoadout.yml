@@ -10,7 +10,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - CenturionBestiarySet
     - CenturionVenatorSet
@@ -31,7 +30,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - FrumentariaSpySet
     - FrumentariaNCRSpySet
@@ -56,7 +54,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - DeanGladiatorSet
     - DeanSagitariaSet
@@ -78,7 +75,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - VeteranFirearmSet
     - VeteranBerserkerSet
@@ -100,7 +96,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - WarriorBaseSet
     - WarriorSlaveOwnerSet
@@ -124,7 +119,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - RecruitBaseSet
     - RecruitSpearSet
@@ -149,7 +143,6 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - BaseWashingtonBoSSet
     - WattzWashingtonBoSSet
@@ -172,7 +165,6 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - ScribeMedicWashingtonBoSSet
     - ScribeEngineerWashingtonBoSSet
@@ -193,7 +185,6 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - CommandBaseWashingtonBoSSet
     - CommandMultiWashingtonBoSSet

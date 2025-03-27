@@ -59,7 +59,6 @@
   - type: ItemToggleSize
     activatedSize: Large
   - type: ItemToggleHot
-    activatedDisarmMalus: 0.6
   - type: UseDelay
   - type: ItemToggle
     predictable: false
@@ -109,7 +108,7 @@
     useSound:
       collection: Welder
     qualities: Welding
-    speed: 3
+    speedModifier: 3
   - type: Welder
   - type: PointLight
     enabled: false
@@ -152,7 +151,6 @@
   - type: ItemToggleSize
     activatedSize: Large
   - type: ItemToggleHot
-    activatedDisarmMalus: 0.6
   - type: ToggleableLightVisuals
     spriteLayer: flame
     inhandVisuals:
