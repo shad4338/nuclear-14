@@ -16,10 +16,10 @@
     - CenturionVenatorSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionFrumentarialoadoutkits
@@ -41,10 +41,10 @@
     - FrumentariaSaboteurSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionDeanloadoutkits
@@ -63,10 +63,10 @@
     - DeanBerserkerSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionVeteranloadoutkits
@@ -85,10 +85,10 @@
     - VeteranKebabSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionWarriorloadoutkits
@@ -109,10 +109,10 @@
     - WarriorMeleeSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionRecruitloadoutkits
@@ -132,10 +132,10 @@
     - RecruitHealerSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 #Washington kits
 
@@ -157,10 +157,10 @@
     - ProtoWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonScribeKits
@@ -178,10 +178,10 @@
     - ScribeEngineerWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonCommandKits
@@ -202,10 +202,10 @@
     - CommandGatlingWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#       type: UndecidedLoadoutBackpackBoundUserInterface
 
 ### Sets
 
