@@ -15,8 +15,8 @@
         Slash: 0.2
         Piercing: 0.2
         Heat: 0.2
-  - type: ClothingSpecialModifier
-    strengthModifier: 10
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 10
 
 - type: entity
   parent: ClothingOuterBase
@@ -38,8 +38,8 @@
         Slash: 0.55
         Piercing: 0.5
         Heat: 0.5
-  - type: ClothingSpecialModifier
-    strengthModifier: 2
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
 
 - type: entity
   parent: ClothingOuterBase
@@ -58,8 +58,8 @@
         Slash: 0.65
         Piercing: 0.6
         Heat: 0.6
-  - type: ClothingSpecialModifier
-    strengthModifier: 1
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 1
 
 - type: entity
   parent: ClothingOuterBase
@@ -78,8 +78,8 @@
         Slash: 0.70
         Piercing: 0.65
         Heat: 0.65
-  - type: ClothingSpecialModifier
-    strengthModifier: 2
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
 
 - type: entity
   parent: ClothingOuterBase
