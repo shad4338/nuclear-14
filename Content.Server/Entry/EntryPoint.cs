@@ -52,7 +52,7 @@ namespace Content.Server.Entry
         private PlayTimeTrackingManager? _playTimeTracking;
         private IEntitySystemManager? _sysMan;
         private IServerDbManager? _dbManager;
-        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+        private readonly DiscordAuthManager _discordAuthManager = default!;
 
         /// <inheritdoc />
         public override void Init()
