@@ -10,16 +10,15 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - CenturionBestiarySet
     - CenturionVenatorSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionFrumentarialoadoutkits
@@ -31,7 +30,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - FrumentariaSpySet
     - FrumentariaNCRSpySet
@@ -41,10 +39,10 @@
     - FrumentariaSaboteurSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionDeanloadoutkits
@@ -56,17 +54,16 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - DeanGladiatorSet
     - DeanSagitariaSet
     - DeanBerserkerSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionVeteranloadoutkits
@@ -78,17 +75,16 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - VeteranFirearmSet
     - VeteranBerserkerSet
     - VeteranKebabSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionWarriorloadoutkits
@@ -100,7 +96,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - WarriorBaseSet
     - WarriorSlaveOwnerSet
@@ -109,10 +104,10 @@
     - WarriorMeleeSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionRecruitloadoutkits
@@ -124,7 +119,6 @@
     sprite: Corvax/Objects/Misc/kits.rsi
     state: base
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - RecruitBaseSet
     - RecruitSpearSet
@@ -132,10 +126,10 @@
     - RecruitHealerSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 #Washington kits
 
@@ -149,7 +143,6 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - BaseWashingtonBoSSet
     - WattzWashingtonBoSSet
@@ -157,10 +150,10 @@
     - ProtoWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonScribeKits
@@ -172,16 +165,15 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - ScribeMedicWashingtonBoSSet
     - ScribeEngineerWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonCommandKits
@@ -193,7 +185,6 @@
     sprite: _Nuclear14/Objects/Misc/kits.rsi
     state: rifleman
   - type: UndecidedLoadoutBackpack
-    transformAfterSelect: AlwaysPoweredWallLight
     possibleSets:
     - CommandBaseWashingtonBoSSet
     - CommandMultiWashingtonBoSSet
@@ -202,10 +193,10 @@
     - CommandGatlingWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-  - type: UserInterface
-    interfaces:
-      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-        type: UndecidedLoadoutBackpackBoundUserInterface
+#  - type: UserInterface
+#    interfaces:
+#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
+#       type: UndecidedLoadoutBackpackBoundUserInterface
 
 ### Sets
 
