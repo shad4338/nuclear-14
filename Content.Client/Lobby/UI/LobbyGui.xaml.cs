@@ -41,7 +41,7 @@ namespace Content.Client.Lobby.UI
                     break;
                 case LobbyGuiState.CharacterSetup:
                     CharacterSetupState.Visible = true;
-
+                    RightSide.Visible = false;
                     var actualWidth = (float) UserInterfaceManager.RootControl.PixelWidth;
                     var setupWidth = (float) LeftSide.PixelWidth;
 
