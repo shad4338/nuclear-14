@@ -1,5 +1,4 @@
 # Legion kits
-
 - type: entity
   id: LegionCenturionloadoutkits
   name: kit
@@ -15,16 +14,16 @@
     - CenturionVenatorSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
+  - type: UserInterface
+    interfaces:
+      enum.UndecidedLoadoutBackpackUIKey.Key:
+        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionFrumentarialoadoutkits
   name: kit
   description: "please only take one."
-  parent: BaseItem
+  parent: LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Corvax/Objects/Misc/kits.rsi
@@ -37,18 +36,12 @@
 #    - FrumentariaWashingtonBoSSpySet Refactor remove
     - FrumentariaAgentSecretPoliceSet
     - FrumentariaSaboteurSet
-  - type: ActivatableUI
-    key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionDeanloadoutkits
   name: kit
   description: "please only take one."
-  parent: BaseItem
+  parent: LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Corvax/Objects/Misc/kits.rsi
@@ -58,18 +51,12 @@
     - DeanGladiatorSet
     - DeanSagitariaSet
     - DeanBerserkerSet
-  - type: ActivatableUI
-    key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionVeteranloadoutkits
   name: kit
   description: "please only take one."
-  parent: BaseItem
+  parent: LegionCenturionloadoutkits
   components:
   - type: Sprite
     sprite: Corvax/Objects/Misc/kits.rsi
@@ -79,22 +66,13 @@
     - VeteranFirearmSet
     - VeteranBerserkerSet
     - VeteranKebabSet
-  - type: ActivatableUI
-    key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionWarriorloadoutkits
   name: kit
   description: "please only take one."
-  parent: BaseItem
+  parent: LegionCenturionloadoutkits
   components:
-  - type: Sprite
-    sprite: Corvax/Objects/Misc/kits.rsi
-    state: base
   - type: UndecidedLoadoutBackpack
     possibleSets:
     - WarriorBaseSet
@@ -102,34 +80,19 @@
     - WarriorHealerSet
     - WarriorFirearmSet
     - WarriorMeleeSet
-  - type: ActivatableUI
-    key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: LegionRecruitloadoutkits
   name: kit
   description: "please only take one."
-  parent: BaseItem
+  parent: LegionCenturionloadoutkits
   components:
-  - type: Sprite
-    sprite: Corvax/Objects/Misc/kits.rsi
-    state: base
   - type: UndecidedLoadoutBackpack
     possibleSets:
     - RecruitBaseSet
     - RecruitSpearSet
     - RecruitMeleeSet
     - RecruitHealerSet
-  - type: ActivatableUI
-    key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
 
 #Washington kits
 
@@ -150,10 +113,10 @@
     - ProtoWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
+  - type: UserInterface
+    interfaces:
+      enum.UndecidedLoadoutBackpackUIKey.Key:
+        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonScribeKits
@@ -170,10 +133,10 @@
     - ScribeEngineerWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#        type: UndecidedLoadoutBackpackBoundUserInterface
+  - type: UserInterface
+    interfaces:
+      enum.UndecidedLoadoutBackpackUIKey.Key:
+        type: UndecidedLoadoutBackpackBoundUserInterface
 
 - type: entity
   id: BoSWashingtonCommandKits
@@ -193,10 +156,10 @@
     - CommandGatlingWashingtonBoSSet
   - type: ActivatableUI
     key: enum.UndecidedLoadoutBackpackUIKey.Key
-#  - type: UserInterface
-#    interfaces:
-#      - key: enum.UndecidedLoadoutBackpackUIKey.Key
-#       type: UndecidedLoadoutBackpackBoundUserInterface
+  - type: UserInterface
+    interfaces:
+      enum.UndecidedLoadoutBackpackUIKey.Key:
+        type: UndecidedLoadoutBackpackBoundUserInterface
 
 ### Sets
 
