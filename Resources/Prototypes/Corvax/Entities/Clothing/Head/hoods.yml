@@ -23,6 +23,7 @@
   - type: Clothing
     sprite: Corvax/Clothing/Head/Hoods/bosReaconHood.rsi
   - type: IngestionBlocker
+  - type: IdentityBlocker
   - type: Tag
     tags:
     - HidesHair
