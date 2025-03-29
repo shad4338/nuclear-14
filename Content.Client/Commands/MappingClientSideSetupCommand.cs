@@ -25,7 +25,7 @@ internal sealed class MappingClientSideSetupCommand : LocalizedCommands
             _entitySystemManager.GetEntitySystem<MarkerSystem>().MarkersVisible = true;
             _lightManager.Enabled = false;
             shell.ExecuteCommand("showsubfloor");
-            shell.ExecuteCommand("zoom 1.5");
+            shell.ExecuteCommand($"zoom {1.5f}");
             shell.ExecuteCommand("scene MappingState");
         }
     }
