@@ -2,7 +2,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Shared.Atmos;
 using Content.Client.UserInterface.Controls;
-using Content.Shared._Shitmed.Targeting; // Shitmed
+using Content.Shared._Shitmed.Targeting;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
@@ -31,7 +31,6 @@ namespace Content.Client.HealthAnalyzer.UI
         private readonly IPrototypeManager _prototypes;
         private readonly IResourceCache _cache;
 
-        // Shitmed Change Start
         public event Action<TargetBodyPart?, EntityUid>? OnBodyPartSelected;
         private EntityUid _spriteViewEntity;
 
@@ -40,7 +39,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
         private readonly Dictionary<TargetBodyPart, TextureButton> _bodyPartControls;
         private EntityUid? _target;
-        // Shitmed Change End
+
 
         public HealthAnalyzerWindow()
         {
@@ -51,7 +50,6 @@ namespace Content.Client.HealthAnalyzer.UI
             _spriteSystem = _entityManager.System<SpriteSystem>();
             _prototypes = dependencies.Resolve<IPrototypeManager>();
             _cache = dependencies.Resolve<IResourceCache>();
-            // Shitmed Change Start
             _bodyPartControls = new Dictionary<TargetBodyPart, TextureButton>
             {
                 { TargetBodyPart.Head, HeadButton },
@@ -73,10 +71,8 @@ namespace Content.Client.HealthAnalyzer.UI
                 bodyPartButton.Value.OnPressed += _ => SetActiveBodyPart(bodyPartButton.Key, bodyPartButton.Value);
             }
             ReturnButton.OnPressed += _ => ResetBodyPart();
-            // Shitmed Change End
         }
 
-        // Shitmed Change Start
         public void SetActiveBodyPart(TargetBodyPart part, TextureButton button)
         {
             if (_target == null)
@@ -100,10 +96,8 @@ namespace Content.Client.HealthAnalyzer.UI
                 button.Value.Visible = isHumanoid;
         }
 
-        // Not all of this function got messed with, but it was spread enough to warrant being covered entirely by a Shitmed Change
         public void Populate(HealthAnalyzerScannedUserMessage msg)
         {
-            // Start-Shitmed
             _target = _entityManager.GetEntity(msg.TargetEntity);
             EntityUid? part = msg.Part != null ? _entityManager.GetEntity(msg.Part.Value) : null;
             var isPart = part != null;
@@ -187,20 +181,26 @@ namespace Content.Client.HealthAnalyzer.UI
                 AlertsContainer.DisposeAllChildren();
 
             if (msg.Unrevivable == true)
-                AlertsContainer.AddChild(new RichTextLabel
+            {
+                var unrevivableLabel = new RichTextLabel
                 {
-                    Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text"),
                     Margin = new Thickness(0, 4),
                     MaxWidth = 300
-                });
+                };
+                unrevivableLabel.SetMessage(Loc.GetString("health-analyzer-window-entity-unrevivable-text"), defaultColor: Color.Red);
+                AlertsContainer.AddChild(unrevivableLabel);
+            }
 
             if (msg.Bleeding == true)
-                AlertsContainer.AddChild(new RichTextLabel
+            {
+                var bleedingLabel = new RichTextLabel
                 {
-                    Text = Loc.GetString("health-analyzer-window-entity-bleeding-text"),
                     Margin = new Thickness(0, 4),
                     MaxWidth = 300
-                });
+                };
+                bleedingLabel.SetMessage(Loc.GetString("health-analyzer-window-entity-bleeding-text"), defaultColor: Color.Red);
+                AlertsContainer.AddChild(bleedingLabel);
+            }
 
             // Damage Groups
 
@@ -212,7 +212,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
             DrawDiagnosticGroups(damageSortedGroups, damagePerType);
         }
-        // Shitmed Change End
+
         private static string GetStatus(MobState mobState)
         {
             return mobState switch
@@ -312,7 +312,6 @@ namespace Content.Client.HealthAnalyzer.UI
             return rootContainer;
         }
 
-        // Shitmed Change Start
         /// <summary>
         /// Sets up the Body Doll using Alert Entity to use in Health Analyzer.
         /// </summary>
@@ -346,6 +345,5 @@ namespace Content.Client.HealthAnalyzer.UI
             }
             return _spriteViewEntity;
         }
-        // Shitmed Change End
     }
 }
