@@ -109,7 +109,8 @@ namespace Content.Client.Administration.UI.Tabs.PlayerTab
         private void RefreshPlayerList(IReadOnlyList<PlayerInfo> players)
         {
             _players = players;
-            PlayerCount.Text = $"Players: {_playerMan.PlayerCount}";
+            var localizedPlayers = Loc.GetString("player-tab-players"); // Corvax-Localization
+            PlayerCount.Text = $"{localizedPlayers}: {_playerMan.PlayerCount}"; // Corvax-Localization
 
             var filteredPlayers = players.Where(info => _showDisconnected || info.Connected).ToList();
 
