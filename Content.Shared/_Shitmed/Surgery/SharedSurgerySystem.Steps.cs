@@ -305,7 +305,8 @@ public abstract partial class SharedSurgerySystem
                     args.Invalid = StepInvalidReason.MissingTool;
 
                     if (reg.Component is ISurgeryToolComponent required)
-                        args.Popup = $"You need {required.ToolName} to perform this step!";
+                        args.Popup = Loc.GetString($"surgery-popup-missing-tool", // Corvax-Localization
+                            ("tool", required.ToolName));
 
                     return;
                 }
@@ -317,7 +318,7 @@ public abstract partial class SharedSurgerySystem
 
     private EntProtoId? GetProtoId(EntityUid entityUid)
     {
-        if (!TryComp<MetaDataComponent>(entityUid, out var metaData))
+        if (!TryComp(entityUid, out MetaDataComponent? metaData))
             return null;
 
         return metaData.EntityPrototype?.ID;
@@ -682,8 +683,8 @@ public abstract partial class SharedSurgerySystem
     private void OnSurgeryTargetStepChosen(Entity<SurgeryTargetComponent> ent, ref SurgeryStepChosenBuiMsg args)
     {
         var user = args.Actor;
-        if (GetEntity(args.Entity) is {} body &&
-            GetEntity(args.Part) is {} targetPart)
+        if (GetEntity(args.Entity) is { } body &&
+            GetEntity(args.Part) is { } targetPart)
         {
             TryDoSurgeryStep(body, targetPart, user, args.Surgery, args.Step);
         }

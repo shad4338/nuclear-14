@@ -21,6 +21,7 @@ public sealed class SurgeryBui : BoundUserInterface
     [ViewVariables]
     private SurgeryWindow? _window;
     private EntityUid? _part;
+    private ISawmill _sawmill = Logger.GetSawmill("surgery"); // Corvax-Change
     private bool _isBody;
     private (EntityUid Ent, EntProtoId Proto)? _surgery;
     private readonly List<EntProtoId> _previousSurgeries = new();
@@ -211,7 +212,17 @@ public sealed class SurgeryBui : BoundUserInterface
 
             var msg = new FormattedMessage();
             var surgeryName = _entities.GetComponent<MetaDataComponent>(requirement).EntityName;
-            msg.AddMarkup($"[bold]{Loc.GetString("surgery-ui-window-require")}: {surgeryName}[/bold]");
+            // Corvax-Change-Start
+            var msgMessage = $"[bold]{Loc.GetString("surgery-ui-window-require")}: {surgeryName}[/bold]";
+            msg.TryAddMarkup(msgMessage, out string? error);
+
+            if (error != null)
+            {
+                _sawmill.Error(error);
+                return;
+            }
+            // Corvax-Change-End
+
             label.Set(msg, null);
 
             _window.Steps.AddChild(label);
@@ -335,11 +346,11 @@ public sealed class SurgeryBui : BoundUserInterface
 
         if (_entities.TryGetComponent(_part, out MetaDataComponent? partMeta) &&
             _entities.TryGetComponent(_surgery?.Ent, out MetaDataComponent? surgeryMeta))
-            _window.Title = $"Surgery - {partMeta.EntityName}, {surgeryMeta.EntityName}";
+            _window.Title = Loc.GetString("surgery-ui-window-title") + "-" + partMeta.EntityName + surgeryMeta.EntityName; // Corvax-Localization
         else if (partMeta != null)
-            _window.Title = $"Surgery - {partMeta.EntityName}";
+            _window.Title = Loc.GetString("surgery-ui-window-title") + "-" + partMeta.EntityName; // Corvax-Localization
         else
-            _window.Title = "Surgery";
+            _window.Title = Loc.GetString("surgery-ui-window-title"); // Corvax-Localization
     }
 
     private enum ViewType
