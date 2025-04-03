@@ -33,7 +33,7 @@ public sealed partial class OrganComponent : Component, ISurgeryToolComponent //
     public string SlotId = string.Empty;
 
     [DataField]
-    public string ToolName { get; set; } = "An organ";
+    public string ToolName { get; set; } = "Орган"; // Corvax-Localization
 
     [DataField]
     public float Speed { get; set; } = 1f;
