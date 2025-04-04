@@ -29,7 +29,7 @@
           - CaesarLegion
       - type: ReplacementAccent
         accent: latin
- 
+
 - type: startingGear
   id: CaesarLegionCenturionGear
   equipment:
