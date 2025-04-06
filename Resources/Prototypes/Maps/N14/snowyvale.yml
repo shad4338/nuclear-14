@@ -1,7 +1,7 @@
 - type: gameMap
   id: Snowyvale
   mapName: 'Snowyvale'
-  mapPath: /Maps/N14/SnowyvaleSurface.yml
+  mapPath: /Maps/Corvax/SnowyvaleSurfaceCorvax.yml # Corvax-Maps
   minPlayers: 0
   stations:
     Sunnyvale:
@@ -40,17 +40,17 @@
             NCRSGT: [ 2, 3 ]
             NCRWS: [ 2, 2 ]
             NCREngineer: [ 2, 2 ]
-            NCRMedic: [ 1, 2 ] 
+            NCRMedic: [ 1, 2 ]
             NCRSoldier: [ 2, 4 ]
             NCRCadet: [ 2, 3 ]
             CaravanLeader: [ 1, 1 ]
             CaravanTrader: [ 1, 1 ]
             CaravanGuard: [ 2, 2 ]
-            BoSWashingtonCommander: [ 1, 1 ]
-            BoSWashingtonPaladin: [ 1, 1 ]
-            BoSWashingtonScribe: [ 1, 2 ]
-            BoSWashingtonKnight: [ 2, 3 ]
-            BoSWashingtonInitiate: [ 2, 2 ]
+            # BoSWashingtonCommander: [ 1, 1 ]
+            # BoSWashingtonPaladin: [ 1, 1 ]
+            # BoSWashingtonScribe: [ 1, 2 ]
+            # BoSWashingtonKnight: [ 2, 3 ]
+            # BoSWashingtonInitiate: [ 2, 2 ]
             BoSMidPaladinCommander: [ 1, 1 ]
             BoSMidPaladin: [ 1, 1 ]
             BoSMidKnight: [ 2, 3 ]
@@ -61,3 +61,9 @@
             VaultDweller: [ 4, 4 ]
             VaultEngineer: [ 1, 1 ]
             VaultSecurity: [ 2, 2 ]
+            CaesarLegionCenturion: [ 0, 1 ] # Corvax-Legion
+            CaesarLegionFrumentary: [ 0, 1 ] # Corvax-Legion
+            CaesarLegionDean: [ 0, 2 ] # Corvax-Legion
+            CaesarLegionLegionnaireVeteran: [ 0, 3 ] # Corvax-Legion
+            CaesarLegionLegionnaireWarrior: [ 0, 4 ] # Corvax-Legion
+            CaesarLegionLegionnaireRecruit: [ 0, 6 ] # Corvax-Legion
