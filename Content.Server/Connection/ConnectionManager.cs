@@ -283,7 +283,7 @@ namespace Content.Server.Connection
             }
 
             // DeltaV - Replace existing softwhitelist implementation
-            if (false)//if (_cfg.GetCVar(CCVars.WhitelistEnabled) && adminData is null)
+            if (_cfg.GetCVar(CCVars.WhitelistEnabled) && adminData is null)//if (_cfg.GetCVar(CCVars.WhitelistEnabled) && adminData is null)
             {
                 if (_whitelists is null)
                 {
@@ -314,7 +314,7 @@ namespace Content.Server.Connection
 
             // DeltaV - Soft whitelist improvements
             // TODO: replace this with a whitelist config prototype with a connected whitelisted players condition
-            if (_cfg.GetCVar(CCVars.WhitelistEnabled))
+            if (false)
             {
                 var connectedPlayers = _plyMgr.PlayerCount;
                 var connectedWhitelist = _connectedWhitelistedPlayers.Count;
