@@ -85,7 +85,6 @@
       - N14WeaponLaserRevolverBlueprint
       - N14WeaponLaserRifleMakeshiftBlueprint
       - N14WeaponRifle556PipeBlueprint
-      - N14WeaponSniper50PipeBlueprint
       # Gun Parts
       - N14JunkGunpartsAction
       - N14JunkGunpartsBarrel
@@ -104,7 +103,6 @@
       - N14WeaponLaserRevolverBlueprint
       - N14WeaponLaserRifleMakeshiftBlueprint
       - N14WeaponRifle556PipeBlueprint
-      - N14WeaponSniper50PipeBlueprint
 
 - type: entity
   parent: N14WorkbenchBase
@@ -583,6 +581,7 @@
       tags:
         - Sheet
         - RawMaterial
+        - Ingot # Corvax-Change
   - type: Lathe
     producingSound: /Audio/Machines/circuitprinter.ogg
     idleState: icon
@@ -616,6 +615,7 @@
     - HolotagMidwestSquire
     - HolotagMidwestKnight
     - HolotagMidwestPaladin
+    - NCClothingBandageBoS # Corvax-Change
 
 - type: entity
   parent: N14WorkbenchIDPrinter
@@ -651,6 +651,7 @@
     staticRecipes:
     - DogtagNCR
     - DogtagNCRNCO
+    - NCClothingBandageNCR # Corvax-Change
 
 - type: entity
   parent: N14WorkbenchIDPrinter
