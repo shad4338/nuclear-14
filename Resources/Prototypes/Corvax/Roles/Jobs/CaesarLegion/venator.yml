@@ -7,7 +7,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
      department: CaesarLegion
-     min: 43200 #12 hours
+     min: 43200 #12 hours тест
   - !type:CharacterWhitelistRequirement
   - !type:CharacterSpeciesRequirement
     species:
@@ -33,7 +33,7 @@
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitLegionnaire
     mask: N14ClothingMaskBrownMask
-    back: N14ClothingBackpackMilitaryFilled
+    back: N14ClothingBackpackMilitary
     shoes: N14ClothingShoesKaligi
     head: N14ClothingHeadHatVenator
     gloves: N14ClothingHandsGlovesTribal
@@ -42,6 +42,9 @@
     pocket1: LegionVenatorloadoutkits
     id: N14IDLegionaryMedalSilver3
   innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+  storage:
+    back:
+    - N14BoxPlasticFilledMilitary
 
 - type: playTimeTracker
   id: CaesarLegionVenator
