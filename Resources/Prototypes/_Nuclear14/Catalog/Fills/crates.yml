@@ -189,6 +189,17 @@
     contents:
       - id: N14IngotLead20
 
+- type: entity # Corvax-Add-Start
+  parent: N14CrateBreakPlain
+  id: N14CrateBreakPlainFilledFuelTank
+  name: FuelTank crate
+  description: Crate containing 1 FuelTank
+  components:
+  - type: StorageFill
+    contents:
+      - id: N14FuelTankHandy
+        amount: 1 # Corvax-Add-End
+      
 - type: entity
   parent: N14CrateBreakPlain
   id: N14CrateBreakPlainFilledAbraxo
@@ -341,6 +352,8 @@
   - type: StorageFill
     contents:
       - id: N14WeaponHMGcanadian
+        amount: 1
+      - id: Magazine762AmmoBelt # Corvax-Add
         amount: 1
 
 - type: entity
@@ -501,12 +514,12 @@
   parent: N14CrateBreakPlain
   id: N14CrateBreakPlainFilledC4
   name: C4 crate
-  description: Crate containing 2 bundles of C4 .
+  description: Crate containing 3 bundles of C4 . 
   components:
   - type: StorageFill
     contents:
       - id: C4
-        amount: 2
+        amount: 3 # Corvax-Change
 
 - type: entity
   parent: N14CrateBreakPlain
