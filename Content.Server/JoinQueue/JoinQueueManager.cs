@@ -140,7 +140,8 @@ public sealed class JoinQueueManager
         if (isDisconnect)
             players--; // Decrease currently disconnected session but that has not yet been deleted
 
-        var haveFreeSlot = players < _configuration.GetCVar(CCVars.SoftMaxPlayers);
+        var softMaxPlayers = GetSoftMaxPlayers(); // Forge-Change
+        var haveFreeSlot = players < softMaxPlayers; // Forge-Change
         var queueContains = _queue.Count > 0;
         if (haveFreeSlot && queueContains)
         {
