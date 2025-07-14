@@ -1,0 +1,88 @@
+- type: decal
+  id: ForgeDecal
+  abstract: true
+
+# MARK: Skulls
+
+- type: decal
+  id: ForgeBonesSkull
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/bones.rsi
+    state: skull
+
+- type: decal
+  id: ForgeBonesSkullDeathclaw
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/bones.rsi
+    state: skullDeathclaw
+
+# MARK: Grass
+
+- type: decal
+  id: ForgeGrass1
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/grass.rsi
+    state: grass-1
+
+- type: decal
+  id: ForgeGrass2
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/grass.rsi
+    state: grass-2
+
+- type: decal
+  id: ForgeGrass3
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/grass.rsi
+    state: grass-3
+
+- type: decal
+  id: ForgeGrass4
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/grass.rsi
+    state: grass-4
+
+# MARK: Cactus
+
+- type: decal
+  id: ForgeKactus1
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/kactus.rsi
+    state: kactus-1
+
+- type: decal
+  id: ForgeKactus2
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/kactus.rsi
+    state: kactus-2
+
+- type: decal
+  id: ForgeKactus3
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/kactus.rsi
+    state: kactus-3
+
+#MARK: Cactus good
+
+- type: decal
+  id: ForgeKactusGood1
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/kactus-good.rsi
+    state: kactus-good-1
+
+- type: decal
+  id: ForgeKactusGood2
+  parent: ForgeDecal
+  sprite:
+    sprite: Corvax/Decals/kactus-good.rsi
+    state: kactus-good-2
