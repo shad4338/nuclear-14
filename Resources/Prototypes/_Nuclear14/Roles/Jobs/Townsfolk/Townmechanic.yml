@@ -15,11 +15,11 @@
       department: Townsfolk
       min: 7200 # 2 hours
   startingGear: TownMechanicGear
-  icon: "JobIconTownMechanic" # Corvax-Change
+  icon: "JobIconTownMechanic" # Forge-Change
   supervisors: job-supervisors-townsfolk
   access:
   - TownieMechanic
-  - TownsPerson # Corvax-Change
+  - TownsPerson # Forge-Change
   special:
   - !type:AddComponentSpecial
     components:
@@ -32,16 +32,16 @@
   id: TownMechanicGear
   equipment:
     jumpsuit: N14ClothingUniformJumpsuitMechanic
-    back: N14ClothingBackpackExplorer # Corvax-Change
+    back: N14ClothingBackpackExplorer # Forge-Change
     shoes: N14ClothingShoesBlack
-    id: N14IDPassportTownsfolk
+    id: N14IDPassportTownMechanic # Forge-Change
     belt: N14ClothingBeltUtilityFilled
-    gloves: ClothingHandsGlovesColorYellow # Corvax-Add
+    gloves: ClothingHandsGlovesColorYellow # Forge-Add
     eyes: N14ClothingEyesGlassesWelding
   innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
   satchel: N14ClothingBackpackSatchelWastelanderFilled
   duffelbag: N14ClothingBackpackDuffelFilled
-  storage: # Corvax-Change
+  storage: # Forge-Change
     back:
     - N14BoxPlasticFilledWastelander
 

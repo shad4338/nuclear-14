@@ -86,6 +86,7 @@ entities:
       name: Уэндовер - Подземелье
     - type: Transform
     - type: Map
+      mapPaused: true
     - type: PhysicsMap
     - type: GridTree
     - type: MovedGrids

@@ -6,6 +6,7 @@
   components:
   - type: Damageable
     damageContainer: Biological
+    damageModifierSet: FullRadiationProtection # Forge-Change
   - type: BodyPart
   - type: ContainerContainer
     containers:
