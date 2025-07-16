@@ -1,6 +1,6 @@
 - type: entity
   name: swamper
-  id: N14MobRadswamper
+  id: N14MobSwamper
   parent: N14MobBaseHostileInsect
   description: Crab with shell? That's something new.
   components:
