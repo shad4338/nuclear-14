@@ -1,8 +1,8 @@
 - type: entity
-  name: болотник
-  id: N14MobSwamper
+  name: swamper
+  id: N14MobRadswamper
   parent: N14MobBaseHostileInsect
-  description: Краб с панцырем? Это что-то новое.
+  description: Crab with shell? That's something new.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -50,17 +50,15 @@
         Piercing: 8
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadscorpion
-      amount: 1
-    - id: N14FoodMeatRadscorpionLeg
+    - id: N14FoodMeatMirelurkClaw
       amount: 2
       prob: 0.8
 
 - type: entity
-  name: радиоактивный болотник
+  name: radswamper
   id: N14MobRadSwamper
   parent: N14MobSwamper
-  description: Краб с панцырем, да ещё и светится? Это что-то новое.
+  description: Crab with shell, and also glowing? That's something new.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -81,5 +79,10 @@
     energy: 2
     color: "#4CBB17FF"
   - type: RadiationSource
-    intensity: 1
+    intensity: 0.5
     slope: 0.25
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadlurkClaw
+      amount: 2
+      prob: 0.8
