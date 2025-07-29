@@ -811,7 +811,7 @@
     items:
       - id: ClothingBeltNCR
       - id: N14WeaponSMG9mm
-      - id: MagazineSMG9mm
+      - id: N14MagazineSMG9mm
         amount: 4
       - id: MagazineBox9mm
       - id: N14Stimpak
