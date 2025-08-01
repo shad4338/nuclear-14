@@ -15,8 +15,8 @@
   name: скелет с костюмом убежища
   components:
   - type: Sprite
-    sprite: Corvax/Structures/Decoration/vault-bones.rsi
-    state: vault-bones
+    sprite: Corvax/Structures/Decoration/vault_bones.rsi
+    state: bones
 
 # graves
 
@@ -26,8 +26,8 @@
   name: надгробье
   components:
   - type: Sprite
-    sprite: Corvax/Structures/Decoration/grave.rsi
-    state: grave1
+    sprite: Corvax/Structures/Decoration/graves.rsi
+    state: grob1
 
 - type: entity
   parent: NCDecorFloorGrave1
@@ -35,7 +35,7 @@
   name: надгробье
   components:
   - type: Sprite
-    state: grave2
+    state: grob2
 
 - type: entity
   parent: NCDecorFloorGrave1
@@ -43,4 +43,4 @@
   name: надгробье
   components:
   - type: Sprite
-    state: grave3
+    state: grob3

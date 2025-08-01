@@ -45,6 +45,6 @@
     animation: WeaponArcBite
     wideAnimation: WeaponArcBite
     damage:
-      groups:
+      types:
         Piercing: 10
         Slash: 5

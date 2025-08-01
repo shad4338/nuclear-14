@@ -467,10 +467,10 @@
 
 - type: UndecidedLoadoutBackpackSet
   id: RangerSMGSet
-  name: Набор рейнджера инфильтратора
+  name: Набор рейнджера с ПП 9мм
   description: Набор рейнджера, содержащий пистолет-пулемёт, 4 магазина и 1 коробку патронов калибра 9 милиметров, стимпак, сухой паёк и нож.
   sprite:
     sprite: _Nuclear14/Objects/Misc/kits.rsi
-    state: medic
+    state: rifleman
   content:
   - KitSMGRanger
