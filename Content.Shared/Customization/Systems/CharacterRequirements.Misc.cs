@@ -1,4 +1,3 @@
-using Content.Shared.Customization.Systems;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using JetBrains.Annotations;
@@ -7,6 +6,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Content.Shared._NC.CorvaxVars;
+using Content.Shared._NC.Sponsors;
 
 namespace Content.Shared.Customization.Systems;
 

@@ -172,6 +172,7 @@
   exclusive: true
   customName: false
   customDescription: false
+  level: 3
   requirements:
     - !type:CharacterDepartmentRequirement
       departments:
