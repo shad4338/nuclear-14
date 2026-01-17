@@ -9,6 +9,8 @@
   - BoSMidScribe
   - BoSMidKnight
   - BoSMidSquire
+  - BoSMidInquisitor # Forge-Change
+  - BoSMidSerf
 
 - type: department
   id: BrotherhoodWashington
@@ -44,6 +46,8 @@
   - NCREngineer
   - NCRSoldier
   - NCRCadet
+  - NCRPisoner
+  - NCRMPinvestigator
 
 #- type: department # Disabled until roles are implemented
 #  id: Rangers
@@ -83,7 +87,6 @@
   roles:
   - Survivor
   - Wastelander
-  - WastelandFarmer
   - WastelandMusician
   - WastelandScavenger
 
@@ -103,6 +106,7 @@
   - WastelandReporter # Moved from the Wastelander department, ID unchanged to avoid glitches for players who have it selected.
   - TownMechanic
   - Townsperson
+  - WastelandFarmer # Forge-Change
 
 #- type: department #Disabled until roles are implemented.
 #  id: Zetan

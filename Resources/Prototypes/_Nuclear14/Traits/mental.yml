@@ -53,6 +53,20 @@
         - BoSMidPaladin
         - BoSMidKnight
         - BoSMidSquire
+        # Forge-Change-Start
+        - NCRMPinvestigator
+        - BoSMidInquisitor
+        - BoSWestElderCommander
+        - BoSWestPaladin
+        - BoSWestKnight
+        - BoSWestGunsmith
+        - CaesarLegionCenturion
+        - CaesarLegionVenator
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionLegionnaireRecruit
+        # Forge-Change-End
         - VaultSecurity
   functions:
     - !type:TraitAddComponent
@@ -403,6 +417,10 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - NCR
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - NCRPisoner
   functions:
     - !type:TraitAddComponent
       components:
