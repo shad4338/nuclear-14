@@ -95,8 +95,8 @@
       loop: true
       volume: -6
   temperature: 300
-  duration: 500
-  chance: 6
+  duration: 250
+  chance: 2
   message: weather-rain
 
 - type: soundCollection
@@ -193,8 +193,8 @@
       loop: true
       volume: -6
   temperature: 310
-  duration: 500
+  duration: 250
   showMessage: true
-  chance: 4
+  chance: 1
   sender: weather-announcement
   message: weather-storm
