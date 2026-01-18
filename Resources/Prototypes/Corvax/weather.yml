@@ -30,7 +30,7 @@
   radioactive: true
   rads: 0.75
   showMessage: true
-  chance: 1.5
+  chance: 2
   sender: weather-announcement
   message: weather-radioactive-rain
 
